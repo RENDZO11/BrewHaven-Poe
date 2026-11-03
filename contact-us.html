@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us | Brew Haven Coffee Shop Braamfontein</title>
+    <meta name="description" content="Contact Brew Haven in Braamfontein, Johannesburg. Find our main shop and campus kiosk, opening hours, phone numbers, a map and a message form.">
+    <meta name="keywords" content="coffee shop Braamfontein, coffee Johannesburg, student coffee shop, coffee catering Johannesburg, private event venue Braamfontein, coffee subscription South Africa, Brew Haven">
+    <meta name="author" content="Brew Haven Coffee Shop">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#6b4127">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_ZA">
+    <meta property="og:site_name" content="Brew Haven Coffee Shop">
+    <meta property="og:title" content="Contact Us | Brew Haven Coffee Shop Braamfontein">
+    <meta property="og:description" content="Contact Brew Haven in Braamfontein, Johannesburg. Find our main shop and campus kiosk, opening hours, phone numbers, a map and a message form.">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon"
+href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E☕%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/forms.js" defer></script>
+    <script src="js/map.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+        <div class="brand">
+            <img class="logo" src="Images/brew-haven-coffee-shop-interior.jpg" alt="Brew Haven logo">
+            <span class="brand-name">Brew Haven</span>
+        </div>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="HomePage.html">Home</a>
+            <a href="about-us.html">About</a>
+            <a href="products-services.html">Products and Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="news-updates.html">News and Updates</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact-us.html" class="active" aria-current="page">Contact Us</a>
+        </nav>
+    </header>
+
+    <main class="site-main" id="main">
+        <div class="hero">
+            <img src="Images/brew-haven-coffee-shop-interior.jpg" alt="Inside Brew Haven coffee shop in Braamfontein, Johannesburg">
+        </div>
+
+        <h1 class="page-title">Contact Us</h1>
+        <p class="tagline">Two locations, one great cup of coffee</p>
+
+        <section>
+            <h2>Our locations</h2>
+            <div class="location-grid">
+                <div class="card">
+                    <h3>Main shop, Coffee Lane</h3>
+                    <ul class="contact-details">
+                        <li><span>Address</span> 123 Coffee Lane, Braamfontein, Johannesburg, 2000</li>
+                        <li><span>Phone</span> 0634373969</li>
+                        <li><span>Email</span> <a href="mailto:rendzorikhotso16@gmail.com">rendzorikhotso16@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Campus kiosk, University Square</h3>
+                    <ul class="contact-details">
+                        <li><span>Address</span> Shop 12, University Square, 45 Jorissen Street, Braamfontein, 2000</li>
+                        <li><span>Phone</span> 0634373969</li>
+                        <li><span>Email</span> <a href="mailto:rendzorikhotso16@gmail.com">rendzorikhotso16@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <table class="hours">
+                <caption>Operating hours</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Day</th>
+                        <th scope="col">Main shop</th>
+                        <th scope="col">Campus kiosk</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Monday to Friday</th>
+                        <td>06:30 - 20:00</td>
+                        <td>07:00 - 18:00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Saturday</th>
+                        <td>07:00 - 21:00</td>
+                        <td>08:00 - 16:00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sunday</th>
+                        <td>08:00 - 18:00</td>
+                        <td>Closed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Find us on the map</h2>
+            <div class="map-buttons">
+                <button type="button" class="btn" data-map-target="main">Show main shop</button>
+                <button type="button" class="btn btn-secondary" data-map-target="kiosk">Show campus kiosk</button>
+            </div>
+            <div id="map" role="region" aria-label="Map showing the Brew Haven main shop and campus kiosk"></div>
+        </section>
+
+        <section>
+            <h2>Send us a message</h2>
+            <p>Fill in the form and we will prepare an email to <strong>rendzorikhotso16@gmail.com</strong> for you to send. For prices or bookings, use the <a href="enquiry.html">enquiry page</a> instead.</p>
+            <form class="contact-form" id="contact-form" action="#" method="post" novalidate>
+                <p class="hp" aria-hidden="true"><label for="website">Leave this field empty</label><input type="text" id="website" name="website" tabindex="-1" autocomplete="off"></p>
+                <div class="form-row">
+                    <label for="fullname" id="fullname-label">Full name</label>
+                    <input type="text" id="fullname" name="fullname" data-validate="name" data-label="Your name" placeholder="Enter your name" minlength="2" maxlength="60" autocomplete="name" required>
+                    <span class="field-error" id="fullname-error" role="alert"></span>
+                </div>
+                <div class="form-row">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" id="email" name="email" data-validate="email" data-label="Your email" placeholder="you@example.com" maxlength="100" autocomplete="email" required>
+                    <span class="field-error" id="email-error" role="alert"></span>
+                </div>
+                <div class="form-row">
+                    <label for="phone" id="phone-label">Phone (optional)</label>
+                    <input type="tel" id="phone" name="phone" data-validate="phone" data-label="Your phone number" placeholder="0634373969" maxlength="20" autocomplete="tel">
+                    <span class="field-error" id="phone-error" role="alert"></span>
+                </div>
+                <div class="form-row">
+                    <label for="messagetype" id="messagetype-label">Message type</label>
+                    <select id="messagetype" name="messagetype" data-label="Message type" required>
+                        <option value="">-- Select --</option>
+                        <option value="general">General message</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="compliment">Compliment</option>
+                        <option value="complaint">Complaint</option>
+                        <option value="media">Media or partnership</option>
+                    </select>
+                    <span class="field-error" id="messagetype-error" role="alert"></span>
+                </div>
+                <div class="form-row">
+    <label for="subject" id="subject-label">Subject</label>
+    <select id="subject" name="subject" data-label="Subject" required>
+        <option value="">-- Select a Subject --</option>
+        <option value="buying-application">Buying Application</option>
+        <option value="job-application">Job Application</option>
+        <option value="general-enquiry">General Enquiry</option>
+        <option value="customer-feedback">Customer Feedback</option>
+        <option value="complaint">Complaint</option>
+        <option value="product-information">Product Information</option>
+        <option value="partnership">Business Partnership</option>
+        <option value="event-booking">Event Booking</option>
+        <option value="catering-request">Catering Request</option>
+        <option value="coffee-subscription">Coffee Subscription</option>
+        <option value="website-support">Website Support</option>
+        <option value="other">Other</option>
+    </select>
+    <span class="field-error" id="subject-error" role="alert"></span>
+</div>
+                <div class="form-row">
+                    <label for="message" id="message-label">Message</label>
+                    <textarea id="message" name="message" data-label="Your message" data-counter="message-count" rows="5" minlength="10" maxlength="500" placeholder="Type your message here..." required></textarea>
+                    <small class="char-count" id="message-count"></small>
+                    <span class="field-error" id="message-error" role="alert"></span>
+                </div>
+                <button class="btn" type="submit">Prepare my email</button>
+            </form>
+
+            <div class="result-panel" id="contact-result" hidden tabindex="-1">
+                <h3>Your email is ready</h3>
+                <p>Check the details below, then open the email in your email app to send it to <strong>rendzorikhotso16@gmail.com</strong>.</p>
+                <pre class="email-preview" id="email-preview"></pre>
+                <p class="result-actions">
+                    <a class="btn" id="email-send" href="#">Open in my email app</a>
+                    <button type="button" class="btn btn-secondary" id="email-edit">Edit my message</button>
+                </p>
+                <div class="email-after" id="email-after" hidden>
+                    <p class="form-success" role="status">Thank you! Your email app should now be open. Press Send there to finish.</p>
+                    <button type="button" class="btn" id="email-another">Send another message</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; St10510131 #Brew Haven Coffee Shop</p>
+        <p class="footer-links">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer">X</a>
+            <a href="sitemap.xml">Sitemap</a>
+        </p>
+    </footer>
+</body>
+</html>

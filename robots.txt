@@ -1,0 +1,8 @@
+# Brew Haven Coffee Shop - robots.txt
+# Lets search engines crawl every public page.
+# TODO: replace YOUR-USERNAME.github.io/brew-haven with your live website address.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://YOUR-USERNAME.github.io/brew-haven/sitemap.xml

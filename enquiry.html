@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Make an Enquiry | Catering, Events &amp; Subscriptions | Brew Haven</title>
+    <meta name="description" content="Enquire about Brew Haven catering, private event hire or coffee subscriptions and get an instant cost estimate and availability.">
+    <meta name="keywords" content="coffee shop Braamfontein, coffee Johannesburg, student coffee shop, coffee catering Johannesburg, private event venue Braamfontein, coffee subscription South Africa, Brew Haven">
+    <meta name="author" content="Brew Haven Coffee Shop">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#6b4127">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_ZA">
+    <meta property="og:site_name" content="Brew Haven Coffee Shop">
+    <meta property="og:title" content="Make an Enquiry | Catering, Events &amp; Subscriptions | Brew Haven">
+    <meta property="og:description" content="Enquire about Brew Haven catering, private event hire or coffee subscriptions and get an instant cost estimate and availability.">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon"
+href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E☕%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/forms.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+        <div class="brand">
+            <img class="logo" src="Images/brew-haven-coffee-shop-interior.jpg" alt="Brew Haven logo">
+            <span class="brand-name">Brew Haven</span>
+        </div>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="HomePage.html">Home</a>
+            <a href="about-us.html">About</a>
+            <a href="products-services.html">Products and Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="news-updates.html">News and Updates</a>
+            <a href="enquiry.html" class="active" aria-current="page">Enquiry</a>
+            <a href="contact-us.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main class="site-main" id="main">
+        <div class="hero">
+            <img src="Images/brew-haven-coffee-shop-interior.jpg" alt="Inside Brew Haven coffee shop in Braamfontein, Johannesburg">
+        </div>
+
+        <h1 class="page-title">Make an Enquiry</h1>
+        <p class="tagline">Catering, private events and coffee subscriptions</p>
+
+        <section>
+            <h2>Get a quick estimate</h2>
+            <p>Tell us what you need and we will show you an estimated cost and whether your date is available. Have a general question about our menu? Choose "General or menu question". You can also <a href="products-services.html">browse the menu</a> first.</p>
+            <form class="contact-form" id="enquiry-form" action="#" method="post" novalidate>
+                <p class="hp" aria-hidden="true"><label for="website">Leave this field empty</label><input type="text" id="website" name="website" tabindex="-1" autocomplete="off"></p>
+                <div class="form-row">
+                    <label for="fullname" id="fullname-label">Full name</label>
+                    <input type="text" id="fullname" name="fullname" data-validate="name" data-label="Your name" placeholder="Enter your name" minlength="2" maxlength="60" autocomplete="name" required>
+                    <span class="field-error" id="fullname-error" role="alert"></span>
+                </div>
+                <div class="form-row">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" id="email" name="email" data-validate="email" data-label="Your email" placeholder="you@example.com" maxlength="100" autocomplete="email" required>
+                    <span class="field-error" id="email-error" role="alert"></span>
+                </div>
+                <div class="form-row">
+                    <label for="phone" id="phone-label">Phone (optional)</label>
+                    <input type="tel" id="phone" name="phone" data-validate="phone" data-label="Your phone number" placeholder="0634373969" maxlength="20" autocomplete="tel">
+                    <span class="field-error" id="phone-error" role="alert"></span>
+                </div>
+                <div class="form-row">
+                    <label for="enquirytype" id="enquirytype-label">What would you like to enquire about?</label>
+                    <select id="enquirytype" name="enquirytype" data-label="Enquiry type" required>
+                        <option value="">-- Select --</option>
+                        <option value="catering">Catering for a meeting or event</option>
+                        <option value="event">Private event hire (after hours)</option>
+                        <option value="subscription">Coffee bean subscription</option>
+                        <option value="general">General or menu question</option>
+                    </select>
+                    <span class="field-error" id="enquirytype-error" role="alert"></span>
+                </div>
+                <div class="form-row">
+                    <label for="eventdate" id="eventdate-label">Preferred date</label>
+                    <input type="date" id="eventdate" name="eventdate" data-validate="date" data-label="The date">
+                    <span class="field-error" id="eventdate-error" role="alert"></span>
+                </div>
+                <div class="form-row">
+                    <label for="quantity" id="quantity-label">Quantity</label>
+                    <input type="number" id="quantity" name="quantity" data-validate="number" data-label="The quantity" inputmode="numeric" step="1">
+                    <small class="hint" id="quantity-hint"></small>
+                    <span class="field-error" id="quantity-error" role="alert"></span>
+                </div>
+                <div class="form-row">
+                    <label for="details" id="details-label">Tell us a little more</label>
+                    <textarea id="details" name="details" data-label="Your details" data-counter="details-count" rows="4" minlength="10" maxlength="300" placeholder="Any details that will help us, for example the type of event." required></textarea>
+                    <small class="char-count" id="details-count"></small>
+                    <span class="field-error" id="details-error" role="alert"></span>
+                </div>
+                <div class="form-row">
+                    <label class="check-label" for="consent"><input type="checkbox" id="consent" name="consent" value="yes" required> I agree that Brew Haven may contact me about this enquiry.</label>
+                    <span class="field-error" id="consent-error" role="alert"></span>
+                </div>
+                <p class="form-status" id="enquiry-status" role="alert" hidden></p>
+                <button class="btn" type="submit">Send enquiry</button>
+            </form>
+
+            <div class="result-panel" id="enquiry-result" hidden tabindex="-1" aria-live="polite"></div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; St10510131#Brew Haven Coffee Shop</p>
+        <p class="footer-links">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer">X</a>
+            <a href="sitemap.xml">Sitemap</a>
+        </p>
+    </footer>
+</body>
+</html>

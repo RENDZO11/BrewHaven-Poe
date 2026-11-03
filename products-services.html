@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu &amp; Services | Coffee, Tea, Pastries &amp; Catering | Brew Haven</title>
+    <meta name="description" content="Browse the Brew Haven menu: specialty coffee, cold drinks, tea, pastries and light meals, plus catering, private events and coffee subscriptions.">
+    <meta name="keywords" content="coffee shop Braamfontein, coffee Johannesburg, student coffee shop, coffee catering Johannesburg, private event venue Braamfontein, coffee subscription South Africa, Brew Haven">
+    <meta name="author" content="Brew Haven Coffee Shop">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#6b4127">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_ZA">
+    <meta property="og:site_name" content="Brew Haven Coffee Shop">
+    <meta property="og:title" content="Menu &amp; Services | Coffee, Tea, Pastries &amp; Catering | Brew Haven">
+    <meta property="og:description" content="Browse the Brew Haven menu: specialty coffee, cold drinks, tea, pastries and light meals, plus catering, private events and coffee subscriptions.">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon"
+href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E☕%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/menu.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+        <div class="brand">
+            <img class="logo" src="Images/brew-haven-coffee-shop-interior.jpg" alt="Brew Haven logo">
+            <span class="brand-name">Brew Haven</span>
+        </div>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="HomePage.html">Home</a>
+            <a href="about-us.html">About</a>
+            <a href="products-services.html" class="active" aria-current="page">Products and Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="news-updates.html">News and Updates</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact-us.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main class="site-main" id="main">
+        <h1 class="page-title">Our Menu &amp; Services</h1>
+        <p class="tagline">Everything we brew, bake and serve</p>
+
+        <section>
+            <img class="menu-board" src="Images/brew-haven-menu-board.png" alt="Brew Haven printed menu board listing coffee, tea and pastry prices" loading="lazy" decoding="async">
+        </section>
+
+        <section id="menu-app">
+            <h2>Browse our menu</h2>
+            <div class="menu-controls">
+                <div class="field-inline">
+                    <label for="menu-search">Search the menu</label>
+                    <input id="menu-search" type="search" placeholder="Try latte, muffin or tea" autocomplete="off">
+                </div>
+                <div class="field-inline">
+                    <label for="menu-sort">Sort by</label>
+                    <select id="menu-sort">
+                        <option value="default">Menu order</option>
+                        <option value="price-asc">Price: low to high</option>
+                        <option value="price-desc">Price: high to low</option>
+                        <option value="name">Name: A to Z</option>
+                    </select>
+                </div>
+            </div>
+            <div class="tabs" id="menu-tabs" role="tablist" aria-label="Menu categories"></div>
+            <p class="menu-count" id="menu-count" aria-live="polite"></p>
+            <div class="card-grid" id="menu-results"></div>
+            <noscript><p>Please turn on JavaScript to browse the menu, or view the printed menu board above.</p></noscript>
+        </section>
+
+        <section>
+            <h2>Additional services</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Catering</h3>
+                    <p>Coffee and pastry catering for meetings and events.</p>
+                </div>
+                <div class="card">
+                    <h3>Private events</h3>
+                    <p>Rent our space after hours. Capacity: 40 people.</p>
+                </div>
+                <div class="card">
+                    <h3>Student discount</h3>
+                    <p>10% off all beverages with a valid student card.</p>
+                </div>
+                <div class="card">
+                    <h3>Coffee subscriptions</h3>
+                    <p>Monthly fresh bean delivery to your door.</p>
+                </div>
+            </div>
+            <p>Want a price? <a href="enquiry.html">Make an enquiry</a> and get an instant estimate.</p>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; St10510131#Brew Haven Coffee Shop</p>
+        <p class="footer-links">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer">X</a>
+            <a href="sitemap.xml">Sitemap</a>
+        </p>
+    </footer>
+</body>
+</html>
